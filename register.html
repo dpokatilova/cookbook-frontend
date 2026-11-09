@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація — CookBook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CookBook</h1>
+    <p><a class="button" href="index.html">До рецептів</a></p>
+  </header>
+
+  <main>
+    <h2>Реєстрація</h2>
+    <form id="register-form" class="form" novalidate>
+      <label for="username">Ім'я користувача *</label>
+      <input type="text" id="username" maxlength="150" required>
+      <p class="field-error" id="error-username"></p>
+
+      <label for="first_name">Ім'я</label>
+      <input type="text" id="first_name" maxlength="150">
+      <p class="field-error" id="error-first_name"></p>
+
+      <label for="last_name">Прізвище</label>
+      <input type="text" id="last_name" maxlength="150">
+      <p class="field-error" id="error-last_name"></p>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" maxlength="254" required>
+      <p class="field-error" id="error-email"></p>
+
+      <label for="password">Пароль *</label>
+      <input type="password" id="password" maxlength="128" required>
+      <p class="field-error" id="error-password"></p>
+
+      <label for="password2">Повторіть пароль *</label>
+      <input type="password" id="password2" maxlength="128" required>
+      <p class="field-error" id="error-password2"></p>
+
+      <button type="submit" class="button">Зареєструватися</button>
+    </form>
+
+    <p id="message"></p>
+    <p>Вже є акаунт? <a href="login.html">Увійти</a></p>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="auth.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
