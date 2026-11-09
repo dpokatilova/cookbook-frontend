@@ -1,10 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
-
 let categoryNames = {};
-
-function showMessage(text) {
-  $("#message").text(text);
-}
 
 function loadCategories() {
   $.get(API_URL + "/categories/")
